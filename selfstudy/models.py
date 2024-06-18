@@ -20,6 +20,7 @@ class Material(models.Model):
 
     title = models.CharField(max_length=150, verbose_name='название')
     description = models.TextField(verbose_name='описание')
+    chapter = models.ForeignKey(Chapter, on_delete=models.CASCADE, verbose_name='раздел')
 
     class Meta:
         verbose_name = 'материал'

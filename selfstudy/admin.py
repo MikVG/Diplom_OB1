@@ -16,7 +16,7 @@ class ChapterAdmin(admin.ModelAdmin):
 class MaterialAdmin(admin.ModelAdmin):
     """Регистрация в админке модели Материал."""
 
-    list_display = ('title', 'description')
+    list_display = ('title', 'description', 'chapter')
     list_filter = ('title',)
     search_fields = ('title',)
 
